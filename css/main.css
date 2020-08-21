@@ -401,6 +401,12 @@ mark {
   color: #000000;
 }
 
+.marked {
+  background: #fff099;
+  color: #000000;
+    line-height: 0.5rem;
+}
+
 hr {
   border: solid #e0e0e0;
   border-width: 1px 0 0;
