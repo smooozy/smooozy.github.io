@@ -130,6 +130,8 @@ a:active {
 }
 
 
+
+
 /* ===================================================================
  * # typography & general theme styles
  * 
@@ -1643,7 +1645,7 @@ input::-moz-focus-inner {
 }
 
 .display-1 {
-  font-size: 5.6rem;
+  font-size: 4rem;
   line-height: 1.143;
   letter-spacing: 0.02rem;
   margin-top: -20px;
@@ -1718,7 +1720,7 @@ input::-moz-focus-inner {
 .media-wrap img,
 .media-wrap .video-container {
   vertical-align: bottom;
-  margin-top: -10px !important;
+  margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
@@ -2178,7 +2180,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:1400px) {
   .display-1 {
-    font-size: 5.2rem;
+    font-size: 3.8rem;
   }
   .masonry .grid-sizer,
   .masonry__brick {
@@ -2189,7 +2191,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:1200px) {
   .display-1 {
-    font-size: 5.2rem;
+    font-size: 4.6rem;
   }
   .masonry .grid-sizer,
   .masonry__brick {
@@ -2301,6 +2303,36 @@ input::-moz-focus-inner {
  * # site header
  *
  * ------------------------------------------------------------------- */
+
+.lang {
+    z-index: 600;
+    position: fixed;
+    display: table;
+    top: 0;
+    right: 0;
+    color: #151515;
+    text-align: right;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.6rem 1.6rem 1rem 4.6rem;
+}
+
+.lang a {
+    color: #151515;
+}
+
+.lang a:hover{
+    color: #da5260;
+}
+
+@media screen and (max-width:1100px) {
+.lang {
+    z-index: 2000;
+    top: 8px;
+    right: 10rem;
+}
+}
+
 .s-wrap {
   position: relative;
 }
@@ -2643,6 +2675,21 @@ input::-moz-focus-inner {
   background-image: url(../images/icons/social/icon-vimeo.svg);
 }
 
+/* -------------------------------------------------------------------
+ * ## header search trigger
+ * ------------------------------------------------------------------- */
+.header__search-trigger {
+  z-index: 1;
+  display: block;
+  color: #000000;
+  position: fixed;
+  right: 40px;
+  top: 6.4rem;
+}
+
+
+
+
 /* ------------------------------------------------------------------- 
  * ## close button for search 
  * ------------------------------------------------------------------- */
@@ -2784,6 +2831,12 @@ input::-moz-focus-inner {
     line-height: 7.2rem;
       color: #fff;
   }
+    
+  .header__nav li.current > a {
+  color: #FFE920;
+  background: none;
+  border-bottom: 4px solid #FFE920;
+}
 
   .header__nav li.has-children > a::after {
     top: 32px;
@@ -2803,13 +2856,12 @@ input::-moz-focus-inner {
   }
 
   .header__search-trigger {
-    background-image: url(../images/icons/icon-search-w.svg);
-    height: 20px;
-    width: 20px;
+    
     top: 29px;
     right: 9.8rem;
   }
-
+    
+    
   .header__search-trigger::before,
   .header__search-trigger::after {
     display: none;
@@ -2862,6 +2914,12 @@ input::-moz-focus-inner {
   .header__nav li ul {
     font-size: 11px;
   }
+    
+  .header__nav li.current > a {
+  color: #FFE920;
+  background: none;
+  border-bottom: 4px solid #FFE920;
+}
 
 }
 
