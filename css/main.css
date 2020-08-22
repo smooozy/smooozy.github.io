@@ -2763,7 +2763,7 @@ input::-moz-focus-inner {
   }
 
   .header__top {
-    z-index: 1000;
+    z-index: 1999;
     display: block;
     background: #ffffff;
     width: 100%;
