@@ -2764,6 +2764,7 @@ input::-moz-focus-inner {
 
   .header__top {
     z-index: 1000;
+    display: block;
     background: #ffffff;
     width: 100%;
     height: 78px;
