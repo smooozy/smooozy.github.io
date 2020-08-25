@@ -2306,7 +2306,7 @@ input::-moz-focus-inner {
 
 .lang {
     z-index: 600;
-    position: fixed;
+    position: absolute;
     display: table;
     top: 0;
     right: 0;
@@ -2314,7 +2314,7 @@ input::-moz-focus-inner {
     text-align: right;
     font-size: 1.6rem;
     font-weight: 500;
-    padding: 1.6rem 1.6rem 1rem 4.6rem;
+    padding: 0.5rem 1.5rem 1rem 1rem;
 }
 
 .lang a {
@@ -2998,6 +2998,10 @@ input::-moz-focus-inner {
 .content__page-header {
   text-align: left;
   margin-bottom: 4rem;
+}
+
+.features-title {
+margin-top: 0;  
 }
 
 /* -------------------------------------------------------------------
