@@ -1221,7 +1221,7 @@ input::-moz-focus-inner {
 }
 
 .credits li a {
-  display: inline-block;
+  display: inline;
   font-size: 1.8rem;
   font-weight: 500;
   border: none;
@@ -2328,7 +2328,7 @@ input::-moz-focus-inner {
 @media screen and (max-width:1100px) {
 .lang {
     z-index: 2000;
-    top: 8px;
+    top: 19px;
     right: 10rem;
 }
 }
